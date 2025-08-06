@@ -206,4 +206,4 @@ SOFTWARE.
 
 ---
 
-## Made with ⚡ by KhALiLXD The Founder of Lousin
+## Made with ⚡ by  [KhALiLXD](https://github.com/KhALiLXD) The Founder of [Lousin](https://lous.in)
