@@ -1,6 +1,6 @@
 {
   "name": "@lousin/form-engine",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A minimal form validation engine for React",
   "main": "dist/index.js",
   "module": "dist/index.js",

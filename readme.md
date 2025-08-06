@@ -6,12 +6,12 @@ A minimal, flexible, and extendable validation hook for handling structured form
 
 ## 🚀 Features
 
-- 🔄 Track changes with internal schema snapshot comparison
-- ✅ Supports multiple validation rules per field
-- 🔧 Custom rule definitions and extensions
-- 🧪 Validate full form or individual fields
-- 🔍 Get detailed error reports per field
-- 🧼 Clone-safe and immutable snapshot handling
+* 🔄 Track changes with internal schema snapshot comparison
+* ✅ Supports multiple validation rules per field
+* 🔧 Custom rule definitions and extensions
+* 🧪 Validate full form or individual fields
+* 🔍 Get detailed error reports per field
+* 🧼 Clone-safe and immutable snapshot handling
 
 ---
 
@@ -127,15 +127,15 @@ rules.customPhone = {
 
 Each field in the schema can include:
 
-- `default`: default value
-- `required`: whether field is mandatory
-- `value`: current value (can be updated internally)
-- `validate`: array of rule objects
+* `default`: default value
+* `required`: whether field is mandatory
+* `value`: current value (can be updated internally)
+* `validate`: array of rule objects
 
 Each rule object includes:
 
-- `rule`: string name of the rule (must exist in rules map)
-- `parm` (optional): parameter passed to the rule
+* `rule`: string name of the rule (must exist in rules map)
+* `parm` (optional): parameter passed to the rule
 
 ---
 
@@ -169,10 +169,10 @@ import {
 
 ## 🧼 Roadmap Ideas
 
-- Async validation support
-- `useField` hook
-- Form context for nested forms
-- Better deep cloning with symbols/Date support
+* Async validation support
+* `useField` hook
+* Form context for nested forms
+* Better deep cloning with symbols/Date support
 
 ---
 
@@ -192,6 +192,10 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
+However, redistribution of the internal validation logic (such as the `rulesMap`, `validator.js`, or schema utilities) in competing libraries or frameworks, with minimal or no modification, is **prohibited**.
+
+If you wish to use this logic in a separate package or product, please contact the original author for permission.
+
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -203,4 +207,3 @@ SOFTWARE.
 ---
 
 ## Made with ⚡ by KhALiLXD The Founder of Lousin
-
