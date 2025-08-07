@@ -1,7 +1,7 @@
 export const rules = {
     email : {
         validate : (value) => /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(value),
-        onError : "الرجاء ادخال ايميل example@email.com"
+        onError : "Please enter valid Email (ex. example@email.com)"
     },
     min : {
         validate : (value,parm) => {
@@ -9,7 +9,7 @@ export const rules = {
                 else if (typeof value === 'number') return value >= parm;
                 else return false 
         },
-        onError : "الرقم ادنى من المطلوب"
+        onError : `Minimum length is`
     },
     max : {
         validate : (value,parm) => {
@@ -17,18 +17,18 @@ export const rules = {
             else if (typeof value === 'number') return value <= parm;
             else return false 
         },
-        onError : "الرقم اعلى من المطلوب"
+        onError : `Maximum length is reached`
     },
     string : {
         validate : (value) => typeof value === 'string' && /^[a-zA-Z]+$/.test(value),
-        onError : "الرجاء ادخال نص"
+        onError : "Only alphabit characters are allowed"
     },
     number : {
          validate : (value) => typeof value === 'number' && /[0-9]+/.test(value),
-         onError : "الرجاء ادخال رقم صحيح"
+         onError : "only Integer numbers are allowed"
     },
         required: {
             validate:  (value) => value !== ''  && value !== undefined && value !== null,
-            onError: 'هذا الحقل مطلوب'
+            onError: 'You cannot leave this filed empty'
         },
 }

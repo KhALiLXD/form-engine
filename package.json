@@ -1,10 +1,17 @@
 {
   "name": "@lousin/form-engine",
-  "version": "1.0.4",
-  "description": "A minimal form validation engine for React",
+  "version": "2.0.0",
+  "description": "Powerful and lightweight form validation engine for React. Control every field, rule, and change — without the bloat.",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    }
+  },
   "files": [
     "dist"
   ],
@@ -14,18 +21,38 @@
   "scripts": {
     "build": "rollup -c"
   },
-  "keywords": ["react", "form", "validation", "hook","next.js","form handler"],
+  "keywords": [
+    "react",
+    "form validation",
+    "react forms",
+    "react hook form",
+    "custom hook",
+    "form engine",
+    "validation engine",
+    "form handler",
+    "react form schema",
+    "lousin",
+    "next.js"
+  ],
   "author": "Lousin",
   "license": "MIT",
+  "homepage": "https://github.com/KhALiLXD/form-engine",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KhALiLXD/form-engine.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KhALiLXD/form-engine/issues"
+  },
   "peerDependencies": {
     "react": ">=17.0.0"
   },
   "devDependencies": {
-    "rollup": "^2.79.1",
-    "@rollup/plugin-node-resolve": "^15.0.1",
-    "@rollup/plugin-commonjs": "^25.0.0",
     "@rollup/plugin-babel": "^6.0.3",
-    "rollup-plugin-terser": "^7.0.2",
-    "rollup-plugin-peer-deps-external": "^2.2.4"
+    "@rollup/plugin-commonjs": "^25.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "rollup": "^2.79.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-terser": "^7.0.2"
   }
 }
